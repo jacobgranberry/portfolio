@@ -14,7 +14,7 @@ const StyledBox = styled.div`
     top: 5%;
     left: 5%;
     position: relative;
-    background-color: ${colors.dark};
+    background-image: ${colors.gradientlight};
 `
 const Box = ({ children }) => (
     <BoxWrapper>

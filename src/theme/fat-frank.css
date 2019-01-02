@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'fat-frank';
+    src: url('../../public/fonts/FatFrank-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../public/fonts/FatFrank-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../public/fonts/FatFrank-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }

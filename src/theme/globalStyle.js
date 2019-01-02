@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import colors from './colors';
 
 const GlobalStyle = createGlobalStyle`
-    @import: url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
     * {
         box-sizing: border-box;
@@ -10,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Montserrat', sans-serif;
-        background-color: ${colors.red};
+        background-image: ${colors.gradient};
         margin: 0;
         padding: 0;
         left: 0;
@@ -20,3 +19,4 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default GlobalStyle;
+
