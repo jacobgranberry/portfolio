@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import GlobalStyle from './theme/globalStyle';
+import { Route } from 'react-router-dom';
+
+import Home from './templates/Home';
+import About from './templates/About';
+import Contact from './templates/Contact';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
       <GlobalStyle />
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
       </div>
     );
   }
