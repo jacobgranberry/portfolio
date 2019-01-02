@@ -6,6 +6,7 @@ const NavWrapper = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0 24px;
 `
 
 
