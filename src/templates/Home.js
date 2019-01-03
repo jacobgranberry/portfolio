@@ -34,7 +34,6 @@ const Home = () => (
                     <span>Y</span>
                 </Header>
                 <Text><ColoredSpan>Frontend Developer</ColoredSpan> from Austin, Texas.</Text>
-                <Text centered home>Projects</Text>
             </Container>
         </Box>
     </Section>
