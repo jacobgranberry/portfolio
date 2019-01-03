@@ -9,12 +9,11 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Montserrat', sans-serif;
-        background-image: ${colors.light};
+        background-color: ${colors.light};
         margin: 0;
         padding: 0;
         left: 0;
         top: 0;
-        color: ${colors.white};
     }
 `
 
