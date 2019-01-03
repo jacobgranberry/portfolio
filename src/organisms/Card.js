@@ -21,6 +21,10 @@ const ImgWrapper = styled.div`
     align-items: center;
     height: 100%;
     padding: 24px;
+
+    @media (max-width: 64em) {
+        height: 350px;
+    }
 `
 
 const ButtonWrapper = styled.div`
@@ -31,7 +35,7 @@ const ButtonWrapper = styled.div`
 class Card extends Component  {
 
     render() {
-        const { name, description, image } = this.props;
+        const { name, description, image, url } = this.props;
         const items = Object.values(this.props.techs);
 
         const imgStyle = {
@@ -46,18 +50,18 @@ class Card extends Component  {
         return (
             <CardWrapper>
                 <Row>
-                    <Column colmd6 colsm12>
+                    <Column second colmd6 colsm12>
                         <Header card>{name}</Header>
                         <TechList>{items.map(tech =>
                             tech
                         ).join(' / ')}</TechList>
                         <Text regular>{description}</Text>
                         <ButtonWrapper>
-                            <Button>Visit Website</Button>
+                            <Button href={url}>Visit Website</Button>
                         </ButtonWrapper>
                     </Column>
 
-                    <Column colmd6 colsm12>
+                    <Column first colmd6 colsm12>
                         <ImgWrapper>
                             <div style={imgStyle}></div>
                         </ImgWrapper>

@@ -4,6 +4,13 @@ const Column = styled.div`
 
     flex: 0 0 auto;
 
+    ${props => props.colmd3 && css`
+        @media (min-width: 64em) {
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+        }
+    `}
+
     ${props => props.colmd6 && css`
         @media (min-width: 64em) {
             flex-basis: 50%;
@@ -15,6 +22,18 @@ const Column = styled.div`
         flex-basis: 100%;
         max-width: 100%;
     `}
+
+    ${props => props.first && css`
+        @media (max-width: 64em) {
+            order: 1;
+        }
+    `}
+
+    ${props => props.second && css`
+    @media (max-width: 64em) {
+        order: 2;
+    }
+`}
 `
 
 export default Column;

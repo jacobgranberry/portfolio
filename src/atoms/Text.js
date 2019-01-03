@@ -20,7 +20,11 @@ const Text = styled.p`
     `}
 
     ${props => props.regular && css`
-        font-size: 20px;
+        font-size: 18px;
+
+        @media (max-width: 48em) {
+            font-size: 16px;
+        }
     `}
 
     ${props => props.semibold && css`

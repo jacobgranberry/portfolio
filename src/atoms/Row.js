@@ -5,6 +5,7 @@ const Row = styled.div`
     flex-wrap: wrap;
     flex: 0 1 auto;
     flex-direction: row;
+    height: 100%;
 `
 
 export default Row;

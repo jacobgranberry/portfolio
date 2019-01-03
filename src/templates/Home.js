@@ -3,6 +3,7 @@ import Box from '../atoms/Box';
 import Section from '../atoms/Section';
 import Container from '../atoms/Container';
 import Nav from '../organisms/Nav';
+import Footer from '../organisms/Footer';
 import Header from '../atoms/Header';
 import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
@@ -46,9 +47,11 @@ const Home = () => (
                 techs={project.techs}
                 description={project.description}
                 image={project.image}
+                url={project.url}
             />
         )}
         </Container>
+        <Footer />
     </>
 );
 

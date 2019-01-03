@@ -7,6 +7,10 @@ const TechList = styled.div`
     flex-direction: row;
     font-size: 24px;
     padding: 0 24px;
+
+    @media (max-width: 48em) {
+        font-size: 20px;
+    }
 `
 
 export default TechList;

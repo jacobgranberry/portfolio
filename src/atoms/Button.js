@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import colors from '../theme/colors';
 
-const Button = styled.button`
+const Button = styled.a`
   display: block;
   color: ${colors.dark};
   background-color: ${colors.white};
@@ -12,6 +12,7 @@ const Button = styled.button`
   border: 2px solid ${colors.gray};
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 `;
 
 export default Button;
