@@ -4,12 +4,14 @@ import colors from '../theme/colors';
 const Button = styled.button`
   display: block;
   color: ${colors.dark};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid ${colors.dark};
-  border-radius: 3px;
+  background-color: ${colors.white};
+  font-size: 20px;
+  font-weight: 500;
+  margin: 24px;
+  padding: 12px 24px;
+  border: 2px solid ${colors.gray};
   text-align: center;
+  cursor: pointer;
 `;
 
 export default Button;

@@ -5,7 +5,6 @@ import Header from '../atoms/Header';
 import TechList from '../atoms/TechList';
 import Text from '../atoms/Text';
 import Button from '../atoms/Button';
-import Image from '../atoms/Image';
 
 import styled from 'styled-components';
 import colors from '../theme/colors';
@@ -21,6 +20,12 @@ const ImgWrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 24px;
+`
+
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
 `
 
 class Card extends Component  {
@@ -28,6 +33,15 @@ class Card extends Component  {
     render() {
         const { name, description, image } = this.props;
         const items = Object.values(this.props.techs);
+
+        const imgStyle = {
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: "100%",
+            width: "100%",
+        }
 
         return (
             <CardWrapper>
@@ -38,12 +52,14 @@ class Card extends Component  {
                             tech
                         ).join(' / ')}</TechList>
                         <Text regular>{description}</Text>
-                        <Button>Visit Website</Button>
+                        <ButtonWrapper>
+                            <Button>Visit Website</Button>
+                        </ButtonWrapper>
                     </Column>
 
                     <Column colmd6 colsm12>
                         <ImgWrapper>
-                            <Image src={image} alt={name}/>
+                            <div style={imgStyle}></div>
                         </ImgWrapper>
                     </Column>
                 </Row>
