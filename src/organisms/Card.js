@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Row from '../atoms/Row';
 import Column from '../atoms/Column';
 import Header from '../atoms/Header';
 import TechList from '../atoms/TechList';
 import Text from '../atoms/Text';
 import Button from '../atoms/Button';
+import Image from '../atoms/Image';
 
 import styled from 'styled-components';
 import colors from '../theme/colors';
@@ -15,24 +16,35 @@ const CardWrapper = styled.div`
     margin: 64px 32px;
 `
 
-class Card extends React.Component  {
+const ImgWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+`
+
+class Card extends Component  {
 
     render() {
+        const { name, description, image } = this.props;
         const items = Object.values(this.props.techs);
 
         return (
             <CardWrapper>
                 <Row>
                     <Column colmd6 colsm12>
-                        <Header card>{this.props.name}</Header>
+                        <Header card>{name}</Header>
                         <TechList>{items.map(tech =>
                             tech
                         ).join(' / ')}</TechList>
-                        <Text regular>{this.props.description}</Text>
+                        <Text regular>{description}</Text>
                         <Button>Visit Website</Button>
                     </Column>
 
                     <Column colmd6 colsm12>
+                        <ImgWrapper>
+                            <Image src={image} alt={name}/>
+                        </ImgWrapper>
                     </Column>
                 </Row>
             </CardWrapper>

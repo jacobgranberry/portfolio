@@ -1,6 +1,9 @@
 import styled, {css} from 'styled-components';
 
 const Column = styled.div`
+
+    flex: 0 0 auto;
+
     ${props => props.colmd6 && css`
         @media (min-width: 64em) {
             flex-basis: 50%;

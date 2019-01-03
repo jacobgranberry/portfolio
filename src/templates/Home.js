@@ -45,6 +45,7 @@ const Home = () => (
                 name={project.name}
                 techs={project.techs}
                 description={project.description}
+                image={project.image}
             />
         )}
         </Container>
