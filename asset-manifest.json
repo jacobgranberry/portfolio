@@ -1,16 +1,16 @@
 {
-  "main.js": "/portfolio/static/js/main.aff80f5d.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.aff80f5d.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.2d0401a1.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.2d0401a1.chunk.js.map",
   "static/css/1.3e3ddb85.chunk.css": "/portfolio/static/css/1.3e3ddb85.chunk.css",
   "static/js/1.e9f3ccb4.chunk.js": "/portfolio/static/js/1.e9f3ccb4.chunk.js",
   "static/js/1.e9f3ccb4.chunk.js.map": "/portfolio/static/js/1.e9f3ccb4.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
-  "static/media/index.css": "/portfolio/static/media/montserrat-latin-900.186cae80.woff",
+  "static/media/index.css": "/portfolio/static/media/montserrat-latin-900italic.43b527fe.woff",
   "static/media/goal-squad.jpg": "/portfolio/static/media/goal-squad.076ee115.jpg",
   "static/media/wc.jpg": "/portfolio/static/media/wc.54bcf002.jpg",
   "static/css/1.3e3ddb85.chunk.css.map": "/portfolio/static/css/1.3e3ddb85.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.4c1363df9ecab1cb8a6127457aaf4f39.js": "/portfolio/precache-manifest.4c1363df9ecab1cb8a6127457aaf4f39.js",
+  "precache-manifest.1c8533b7966d0dad176cb1fc8d98bd8e.js": "/portfolio/precache-manifest.1c8533b7966d0dad176cb1fc8d98bd8e.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
