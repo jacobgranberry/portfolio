@@ -8,7 +8,7 @@ import './theme/globalStyle';
 require('typeface-montserrat')
 
 ReactDOM.render(
-<BrowserRouter>
+<BrowserRouter basename="/portfolio">
     <App />
 </BrowserRouter>,
 document.getElementById('root')
