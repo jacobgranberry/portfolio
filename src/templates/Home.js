@@ -6,6 +6,8 @@ import Nav from '../organisms/Nav';
 import Header from '../atoms/Header';
 import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
+import Card from '../organisms/Card';
+import data from "../data.js";
 
 const Home = () => (
     <>
@@ -13,7 +15,7 @@ const Home = () => (
         <Box>
             <Container>
                 <Nav />
-                <Header>
+                <Header jacob>
                     <span>J</span>
                     <span>A</span>
                     <span>C</span>
@@ -32,13 +34,21 @@ const Home = () => (
                     <span>Y</span>
                 </Header>
                 <Text><ColoredSpan>Frontend Developer</ColoredSpan> from Austin, Texas.</Text>
-                <Text centeredhome>Projects</Text>
+                <Text centered home>Projects</Text>
             </Container>
         </Box>
     </Section>
-    <Section light>
-
-    </Section>
+        <Container>
+        <Text semibold centered>Featured Projects</Text>
+        {data.map(project =>
+            <Card
+                key={project.key}
+                name={project.name}
+                techs={project.techs}
+                description={project.description}
+            />
+        )}
+        </Container>
     </>
 );
 
