@@ -9,8 +9,6 @@ import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Card from '../organisms/Card';
 
-import Loader from '../atoms/Loader';
-
 import data from "../data.js";
 
 const Home = () => (

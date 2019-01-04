@@ -67,7 +67,7 @@ const Footer = () => (
                             scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
                             >Projects</AnchorLink>
                         <ColoredSpan white>/</ColoredSpan>
-                        <NavLink footerlink to="/about">About</NavLink>
+                        <NavLink footerlink="true" to="/about">About</NavLink>
                     </FooterContainer>
                 </FooterContentWrapper>
             </Column>

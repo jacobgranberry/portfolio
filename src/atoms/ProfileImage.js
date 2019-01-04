@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../theme/colors';
 import profilepicture from '../images/profile.jpg';
+import SocialIcons from '../atoms/SocialIcons';
+
 
 const ProfileImageWrapper = styled.div`
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height:100%;
@@ -27,9 +30,12 @@ const ProfileImageContainer = styled.img`
 `
 
 const ProfileImage = () => (
+    <>
     <ProfileImageWrapper>
         <ProfileImageContainer />
+        <SocialIcons />
     </ProfileImageWrapper>
+    </>
 )
 
 export default ProfileImage

@@ -1,9 +1,24 @@
 import React from 'react';
 
-const Contact = props => (
-    <div>
+import Section from '../atoms/Section';
+import BoxAlt from '../atoms/BoxAlt';
+import Container from '../atoms/Container';
+import Nav from '../molecules/Nav';
+import { TitleH1 } from '../atoms/Title';
+import Footer from '../molecules/Footer';
 
-    </div>
+const Contact = () => (
+    <>
+    <Section full>
+        <BoxAlt>
+            <Container>
+                <Nav />
+                <TitleH1>Contact Me</TitleH1>
+            </Container>
+        </BoxAlt>
+    </Section>
+    <Footer />
+    </>
 );
 
 export default Contact;

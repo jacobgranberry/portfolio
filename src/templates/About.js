@@ -8,7 +8,6 @@ import { TitleH1, TitleH2 } from '../atoms/Title';
 import Profile from '../molecules/Profile';
 import Footer from '../molecules/Footer';
 
-
 const About = () => (
     <>
     <Section full>
@@ -17,6 +16,7 @@ const About = () => (
                 <Nav />
                 <TitleH1>About Me</TitleH1>
                 <Profile/>
+                <TitleH2>Skills</TitleH2>
             </Container>
         </BoxAlt>
     </Section>
