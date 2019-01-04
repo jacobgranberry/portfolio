@@ -4,8 +4,10 @@ import Row from '../atoms/Row';
 import Column from '../atoms/Column';
 import NavLink from '../atoms/NavLink';
 import ColoredSpan from '../atoms/ColoredSpan';
+import Button from '../atoms/Button';
+import { HashLink as Link } from 'react-router-hash-link';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '../theme/colors';
 
 const FooterWrapper = styled.footer`
@@ -13,12 +15,35 @@ const FooterWrapper = styled.footer`
     height: 350px;
 `
 
-const FooterLinkWrapper = styled.div`
+const FooterContentWrapper = styled.div`
     display: flex;
     flex-direction: row;
     height: 100%;
     justify-content: center;
+    align-items: flex-end;
+
+    ${props => props.center && css`
+        align-items: center;
+    `}
+`
+
+const FooterContainer = styled.div`
+    display: flex;
     align-items: center;
+`
+
+const AnchorLink = styled(Link)`
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 34px;
+    color: ${colors.yellow};
+    padding: 16px 4px;
+
+    &:hover {
+        color: ${colors.white}
+    }
 `
 
 const Footer = () => (
@@ -26,17 +51,24 @@ const Footer = () => (
     <FooterWrapper>
         <Row>
             <Column colmd3 colsm12></Column>
-            <Column colmd3 colsm12></Column>
             <Column colmd3 colsm12>
-                <FooterLinkWrapper>
-                    <NavLink footerlink to="/">Home</NavLink>
-                    <ColoredSpan white>/</ColoredSpan>
-                    <NavLink footerlink to="/">Projects</NavLink>
-                    <ColoredSpan white>/</ColoredSpan>
-                    <NavLink footerlink to="/about">About</NavLink>
-                    <ColoredSpan white>/</ColoredSpan>
-                    <NavLink footerlink to="/contact">Contact</NavLink>
-                </FooterLinkWrapper>
+                <FooterContentWrapper center>
+                    <Button footerbutton href="/contact">Contact Me</Button>
+                </FooterContentWrapper>
+            </Column>
+            <Column colmd3 colsm12>
+                <FooterContentWrapper>
+                    <FooterContainer>
+                        <NavLink footerlink to="/">Home</NavLink>
+                        <ColoredSpan white>/</ColoredSpan>
+                        <AnchorLink
+                            to="/#projects"
+                            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                            >Projects</AnchorLink>
+                        <ColoredSpan white>/</ColoredSpan>
+                        <NavLink footerlink to="/about">About</NavLink>
+                    </FooterContainer>
+                </FooterContentWrapper>
             </Column>
         </Row>
 

@@ -12,6 +12,10 @@ const NavLink = styled(Link)`
     padding: 16px;
     line-height: 34px;
 
+    &:hover {
+        color: ${colors.blue}
+    }
+
     ${props => props.footerlink && css`
         color: ${colors.yellow};
         padding: 16px 4px;

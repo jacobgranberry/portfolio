@@ -8,6 +8,8 @@ import Header from '../atoms/Header';
 import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Card from '../organisms/Card';
+import Loader from '../atoms/Loader';
+
 import data from "../data.js";
 
 const Home = () => (
@@ -39,7 +41,10 @@ const Home = () => (
         </Box>
     </Section>
         <Container>
-        <Text semibold centered>Featured Projects</Text>
+        <section id="projects">
+        <Text semibold
+              centered
+              style={{marginTop: 90}}>Featured Projects</Text>
         {data.map(project =>
             <Card
                 key={project.key}
@@ -50,6 +55,7 @@ const Home = () => (
                 url={project.url}
             />
         )}
+        </section>
         </Container>
         <Footer />
     </>

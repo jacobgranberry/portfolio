@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '../theme/colors';
 
 const Button = styled.a`
@@ -13,6 +13,15 @@ const Button = styled.a`
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+
+  ${props =>  props.footerbutton && css`
+      border: 2px solid ${colors.red};
+      font-size: 26px;
+      color: ${colors.white};
+      background-color: ${colors.dark};
+      width: 350px;
+      padding: 32px;
+  `}
 `;
 
 export default Button;
