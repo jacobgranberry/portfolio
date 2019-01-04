@@ -5,6 +5,7 @@ import Box from '../atoms/Box';
 import Container from '../atoms/Container';
 import Nav from '../molecules/Nav';
 import { TitleH1, TitleH2 } from '../atoms/Title';
+import Profile from '../molecules/Profile';
 
 
 const About = () => (
@@ -14,7 +15,7 @@ const About = () => (
             <Container>
                 <Nav />
                 <TitleH1>About Me</TitleH1>
-
+                <Profile/>
             </Container>
         </Box>
     </Section>
