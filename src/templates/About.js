@@ -1,24 +1,26 @@
 import React from 'react';
 
 import Section from '../atoms/Section';
-import Box from '../atoms/Box';
+import BoxAlt from '../atoms/BoxAlt';
 import Container from '../atoms/Container';
 import Nav from '../molecules/Nav';
 import { TitleH1, TitleH2 } from '../atoms/Title';
 import Profile from '../molecules/Profile';
+import Footer from '../molecules/Footer';
 
 
 const About = () => (
     <>
     <Section full>
-        <Box>
+        <BoxAlt>
             <Container>
                 <Nav />
                 <TitleH1>About Me</TitleH1>
                 <Profile/>
             </Container>
-        </Box>
+        </BoxAlt>
     </Section>
+    <Footer />
     </>
 );
 

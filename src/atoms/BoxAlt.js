@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../theme/colors';
 
-const BoxWrapper = styled.div`
+const BoxAltWrapper = styled.div`
     width: 100%;
     height: 100%;
+    padding: 47px 0;
 `
 
-const StyledBox = styled.div`
+const StyledBoxAlt = styled.div`
     width: 90%;
     height: 90%;
     top: 5%;
@@ -15,12 +16,12 @@ const StyledBox = styled.div`
     position: relative;
     background-image: ${colors.gradientlight};
 `
-const Box = ({ children }) => (
-    <BoxWrapper>
-        <StyledBox>
+const BoxAlt = ({ children }) => (
+    <BoxAltWrapper>
+        <StyledBoxAlt>
             {children}
-        </StyledBox>
-    </BoxWrapper>
+        </StyledBoxAlt>
+    </BoxAltWrapper>
 )
 
-export default Box;
+export default BoxAlt;
