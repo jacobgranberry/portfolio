@@ -19,6 +19,7 @@ const AnchorLink = styled(Link)`
     text-decoration: none;
     padding: 16px;
     line-height: 34px;
+    transition: all 0.3s ease;
 
     &:hover {
         color: ${colors.blue}

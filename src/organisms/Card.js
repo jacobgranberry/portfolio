@@ -45,7 +45,7 @@ class Card extends Component  {
             backgroundRepeat: "no-repeat",
             height: "100%",
             width: "100%",
-            border: `1px solid ${colors.gray}`
+            border: "1px solid rgba(0, 0, 0, .1)"
         }
 
         return (

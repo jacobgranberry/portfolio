@@ -38,6 +38,7 @@ const AnchorLink = styled(Link)`
     font-size: 20px;
     text-decoration: none;
     line-height: 34px;
+    transition: all 0.3s ease;
     color: ${colors.yellow};
     padding: 16px 4px;
 

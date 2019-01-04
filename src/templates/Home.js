@@ -2,12 +2,13 @@ import React from 'react';
 import Box from '../atoms/Box';
 import Section from '../atoms/Section';
 import Container from '../atoms/Container';
-import Nav from '../organisms/Nav';
-import Footer from '../organisms/Footer';
+import Nav from '../molecules/Nav';
+import Footer from '../molecules/Footer';
 import Header from '../atoms/Header';
 import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Card from '../organisms/Card';
+
 import Loader from '../atoms/Loader';
 
 import data from "../data.js";
