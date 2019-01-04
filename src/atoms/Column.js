@@ -4,6 +4,10 @@ const Column = styled.div`
 
     flex: 0 0 auto;
 
+    ${props => props.centered && css`
+        text-align: center;
+    `}
+
     ${props => props.colmd3 && css`
         @media (min-width: 64em) {
             flex-basis: 33.33%;
@@ -33,6 +37,7 @@ const Column = styled.div`
     @media (max-width: 64em) {
         order: 2;
     }
+
 `}
 `
 

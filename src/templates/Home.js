@@ -15,7 +15,7 @@ import data from "../data.js";
 
 const Home = () => (
     <>
-    <Section>
+    <Section fixed>
         <Box>
             <Container>
                 <Nav />

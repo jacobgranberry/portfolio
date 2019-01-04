@@ -60,7 +60,7 @@ const Footer = () => (
             <Column colmd3 colsm12>
                 <FooterContentWrapper>
                     <FooterContainer>
-                        <NavLink footerlink to="/">Home</NavLink>
+                        <NavLink footerlink="true" to="/">Home</NavLink>
                         <ColoredSpan white>/</ColoredSpan>
                         <AnchorLink
                             to="/#projects"

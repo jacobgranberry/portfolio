@@ -10,7 +10,7 @@ import Profile from '../molecules/Profile';
 
 const About = () => (
     <>
-    <Section>
+    <Section full>
         <Box>
             <Container>
                 <Nav />

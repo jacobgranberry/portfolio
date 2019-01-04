@@ -4,7 +4,7 @@ import colors from '../theme/colors';
 const Text = styled.p`
     font-size: 32px;
     color: ${colors.dark};
-    line-height: 39px;
+    line-height: 30px;
     padding: 12px 24px;
 
     ${props => props.centered && css`

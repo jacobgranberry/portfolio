@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import colors from '../theme/colors';
 
 const BoxWrapper = styled.div`
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
 `
