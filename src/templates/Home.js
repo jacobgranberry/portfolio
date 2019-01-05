@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import Box from '../atoms/Box';
 import Section from '../atoms/Section';
 import Container from '../atoms/Container';
@@ -11,31 +12,42 @@ import Card from '../organisms/Card';
 
 import data from "../data.js";
 
+const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const InlineSpan = styled.span`
+    display: inline;
+`
+
 const Home = () => (
     <>
     <Section fixed>
         <Box>
             <Container>
                 <Nav />
-                <Header jacob>
-                    <span>J</span>
-                    <span>A</span>
-                    <span>C</span>
-                    <span>O</span>
-                    <span>B</span>
-                </Header>
-                <Header granberry>
-                    <span>G</span>
-                    <span>R</span>
-                    <span>A</span>
-                    <span>N</span>
-                    <span>B</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>R</span>
-                    <span>Y</span>
-                </Header>
-                <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
+                <ContentWrapper>
+                    <Header jacob>
+                        <InlineSpan>J</InlineSpan>
+                        <InlineSpan>A</InlineSpan>
+                        <InlineSpan>C</InlineSpan>
+                        <InlineSpan>O</InlineSpan>
+                        <InlineSpan>B</InlineSpan>
+                    </Header>
+                    <Header granberry>
+                        <InlineSpan>G</InlineSpan>
+                        <InlineSpan>R</InlineSpan>
+                        <InlineSpan>A</InlineSpan>
+                        <InlineSpan>N</InlineSpan>
+                        <InlineSpan>B</InlineSpan>
+                        <InlineSpan>E</InlineSpan>
+                        <InlineSpan>R</InlineSpan>
+                        <InlineSpan>R</InlineSpan>
+                        <InlineSpan>Y</InlineSpan>
+                    </Header>
+                    <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
+                </ContentWrapper>
             </Container>
         </Box>
     </Section>

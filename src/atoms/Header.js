@@ -13,6 +13,8 @@ const Header = styled.div`
 
     ${props => props.jacob && css`
         background: ${colors.gradient};
+        background-clip: text;
+        text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         @media (max-width: 76em) {
@@ -31,6 +33,8 @@ const Header = styled.div`
 
     ${props => props.granberry && css`
         background: ${colors.gradient};
+        background-clip: text;
+        text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 18vh;
