@@ -35,7 +35,7 @@ const Home = () => (
                     <span>R</span>
                     <span>Y</span>
                 </Header>
-                <Text><ColoredSpan>Frontend Developer</ColoredSpan> from Austin, Texas.</Text>
+                <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
             </Container>
         </Box>
     </Section>
@@ -52,6 +52,7 @@ const Home = () => (
                 description={project.description}
                 image={project.image}
                 url={project.url}
+                github={project.github}
             />
         )}
         </section>

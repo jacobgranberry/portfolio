@@ -53,6 +53,10 @@ const Header = styled.div`
     ${props => props.card && css`
         color: ${colors.dark};
         font-size: 38px;
+
+        @media (max-width: 36em) {
+            font-size: 28px;
+        }
     `}
 `
 

@@ -54,7 +54,7 @@ const HeaderWrapper = styled.div`
 class Card extends Component  {
 
     render() {
-        const { name, description, image, url } = this.props;
+        const { name, description, image, url, github } = this.props;
         const items = Object.values(this.props.techs);
 
         const imgStyle = {
@@ -73,15 +73,19 @@ class Card extends Component  {
                     <Column second colmd6 colsm12>
                         <HeaderWrapper>
                             <Header card>{name}</Header>
-                            <Icon>
-                                <FontAwesomeIcon
-                                    fixedWidth
-                                    transform="shrink-7"
-                                    icon={['fab','github-alt']}
-                                    mask={['fas', 'circle']}
-                                    size="2x"
-                                />
-                            </Icon>
+                            {github ?
+                                <Icon href={github}>
+                                    <FontAwesomeIcon
+                                        fixedWidth
+                                        transform="shrink-7"
+                                        icon={['fab','github-alt']}
+                                        mask={['fas', 'circle']}
+                                        size="2x"
+                                    />
+                                </Icon>
+                            :
+                            ""
+                        }
                         </HeaderWrapper>
                         <TechList>{items.map(tech =>
                             tech
