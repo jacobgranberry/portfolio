@@ -1,5 +1,8 @@
 import React from "react";
 import axios from "axios";
+import FormWrapper from '../atoms/FormWrapper';
+import FormInput from '../atoms/FormInput';
+import FormTextArea from '../atoms/FormTextArea';
 
 
 class Form extends React.Component {
@@ -28,21 +31,21 @@ class Form extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleForm}>
+      <FormWrapper onSubmit={this.handleForm}>
         <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" onChange={this.handleFields} />
+        <FormInput type="text" id="name" name="name" onChange={this.handleFields} />
 
         <label htmlFor="surname">Surname</label>
-        <input type="text" id="surname" name="surname" onChange={this.handleFields} />
+        <FormInput type="text" id="surname" name="surname" onChange={this.handleFields} />
 
         <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" onChange={this.handleFields} />
+        <FormInput type="email" id="email" name="email" onChange={this.handleFields} />
 
         <label htmlFor="message">Your Message</label>
-        <textarea name="message" id="message" onChange={this.handleFields}></textarea>
+        <FormTextArea name="message" id="message" onChange={this.handleFields}></FormTextArea>
 
         <button type="submit">Send</button>
-      </form>
+      </FormWrapper>
     );
   }
 }

@@ -13,10 +13,9 @@ const ProfileWrapper = styled.div`
 const Profile = () => (
     <>
     <ProfileWrapper>
-        <Row>
+        <Row style={{marginBottom: 64}}>
             <Column centered colmd6 colsm12>
                 <ProfileImage />
-                {/* <SocialIcons /> */}
             </Column>
             <Column colmd6 colsm12>
                 <Text regular>
@@ -25,6 +24,9 @@ const Profile = () => (
                 <br/>
                 <br/>
                 I have a background in art and believe it formed the foundation from which I have built strong engineering skills, and also effectively closes the gap that sometimes exists between designers and engineers.
+                <br/>
+                <br/>
+                I also founded a popular fan project called WesterosCraft, a Minecraft server building the world of Game of Thrones. It has been in numerous publications, holds a Guinness World Record, exhibited in museums, and continues to impress and innovate in the community-driven video game space. When I'm not managing that, I'm reading a good book, walking the dogs with my wife or drinking a good beer.
                 </Text>
             </Column>
         </Row>
