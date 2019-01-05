@@ -54,7 +54,7 @@ const Footer = () => (
             <Column colmd3 colsm12></Column>
             <Column colmd3 colsm12>
                 <FooterContentWrapper center>
-                    <Button footerbutton href="/contact">Contact Me</Button>
+                    <Button footerbutton href="/portfolio/contact">Contact Me</Button>
                 </FooterContentWrapper>
             </Column>
             <Column colmd3 colsm12>

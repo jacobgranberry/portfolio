@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../theme/colors';
 import profilepicture from '../images/profile.jpg';
+import Button from '../atoms/Button';
 import SocialIcons from '../atoms/SocialIcons';
+import pdf from '../documents/Jacob Granberry - Software Engineer.pdf';
 
 
 const ProfileImageWrapper = styled.div`
@@ -34,6 +36,7 @@ const ProfileImage = () => (
     <ProfileImageWrapper>
         <ProfileImageContainer />
         <SocialIcons />
+        <Button href={pdf}>View Resume</Button>
     </ProfileImageWrapper>
     </>
 )
