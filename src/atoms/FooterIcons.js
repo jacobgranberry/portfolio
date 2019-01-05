@@ -14,7 +14,7 @@ const Icons = styled.div`
 
 const Icon = styled.a`
     cursor: pointer;
-    color: ${colors.dark};
+    color: ${colors.gray};
 
     &:hover rect {
         transition: all 0.3s ease;
@@ -23,7 +23,7 @@ const Icon = styled.a`
 
 `
 
-const SocialIcons = () => (
+const FooterIcons = () => (
     <>
         <Icons>
             <Icon href="https://www.linkedin.com/in/jacob-granberry/">
@@ -54,4 +54,4 @@ const SocialIcons = () => (
     </>
 )
 
-export default SocialIcons
+export default FooterIcons

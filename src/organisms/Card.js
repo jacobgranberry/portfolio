@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Row from '../atoms/Row';
 import Column from '../atoms/Column';
 import Header from '../atoms/Header';
@@ -32,6 +34,23 @@ const ButtonWrapper = styled.div`
     justify-content: center;
 `
 
+const Icon = styled.a`
+    cursor: pointer;
+    color: ${colors.dark};
+
+    &:hover rect {
+        transition: all 0.3s ease;
+        color: ${colors.blue}
+    }
+
+`
+
+const HeaderWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+`
+
 class Card extends Component  {
 
     render() {
@@ -52,7 +71,18 @@ class Card extends Component  {
             <CardWrapper>
                 <Row>
                     <Column second colmd6 colsm12>
-                        <Header card>{name}</Header>
+                        <HeaderWrapper>
+                            <Header card>{name}</Header>
+                            <Icon>
+                                <FontAwesomeIcon
+                                    fixedWidth
+                                    transform="shrink-7"
+                                    icon={['fab','github-alt']}
+                                    mask={['fas', 'circle']}
+                                    size="2x"
+                                />
+                            </Icon>
+                        </HeaderWrapper>
                         <TechList>{items.map(tech =>
                             tech
                         ).join(' / ')}</TechList>

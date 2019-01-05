@@ -13,6 +13,13 @@ const Button = styled.a`
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.1s ease;
+
+
+  &:hover {
+    background-color: ${colors.dark};
+    color: ${colors.white}
+  }
 
   ${props =>  props.footerbutton && css`
       border: 2px solid ${colors.red};
@@ -20,6 +27,12 @@ const Button = styled.a`
       color: ${colors.white};
       width: 350px;
       padding: 32px;
+      transition: all 0.1s ease;
+
+      &:hover {
+        background-color: ${colors.red}
+        color: ${colors.dark}
+      }
   `}
 `;
 

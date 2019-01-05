@@ -5,6 +5,7 @@ import Column from '../atoms/Column';
 import NavLink from '../atoms/NavLink';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Button from '../atoms/Button';
+import FooterIcons from '../atoms/FooterIcons';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import styled, { css } from 'styled-components';
@@ -51,7 +52,11 @@ const Footer = () => (
     <>
     <FooterWrapper>
         <Row>
-            <Column colmd3 colsm12></Column>
+            <Column colmd3 colsm12>
+                <FooterContentWrapper>
+                    <FooterIcons />
+                </FooterContentWrapper>
+            </Column>
             <Column colmd3 colsm12>
                 <FooterContentWrapper center>
                     <Button footerbutton href="/portfolio/contact">Contact Me</Button>

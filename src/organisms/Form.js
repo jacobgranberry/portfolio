@@ -3,12 +3,14 @@ import axios from "axios";
 import FormWrapper from '../atoms/FormWrapper';
 import FormInput from '../atoms/FormInput';
 import FormTextArea from '../atoms/FormTextArea';
+import FormLabel from '../atoms/FormLabel';
+import FormButton from '../atoms/FormButton';
 
 
 class Form extends React.Component {
   constructor(props){
     super(props);
-    this.state = {name: "", surname: "", email: "", message: ""};
+    this.state = {name: "", email: "", message: ""};
   }
 
   handleForm = e => {
@@ -32,19 +34,16 @@ class Form extends React.Component {
   render() {
     return (
       <FormWrapper onSubmit={this.handleForm}>
-        <label htmlFor="name">Name</label>
+        <FormLabel htmlFor="name">Name</FormLabel>
         <FormInput type="text" id="name" name="name" onChange={this.handleFields} />
 
-        <label htmlFor="surname">Surname</label>
-        <FormInput type="text" id="surname" name="surname" onChange={this.handleFields} />
-
-        <label htmlFor="email">Email</label>
+        <FormLabel htmlFor="email">Email</FormLabel>
         <FormInput type="email" id="email" name="email" onChange={this.handleFields} />
 
-        <label htmlFor="message">Your Message</label>
-        <FormTextArea name="message" id="message" onChange={this.handleFields}></FormTextArea>
+        <FormLabel htmlFor="message">Your Message</FormLabel>
+        <FormTextArea required name="message" id="message" onChange={this.handleFields}></FormTextArea>
 
-        <button type="submit">Send</button>
+        <FormButton type="submit">Send</FormButton>
       </FormWrapper>
     );
   }
