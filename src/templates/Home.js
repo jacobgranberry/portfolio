@@ -9,6 +9,7 @@ import Header from '../atoms/Header';
 import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Card from '../organisms/Card';
+import MobileNav from '../organisms/MobileNav';
 
 import data from "../data.js";
 
@@ -35,6 +36,7 @@ const Home = () => (
         <Box>
             <Container>
                 <Spacer>
+                    <MobileNav />
                     <Nav />
                     <ContentWrapper>
                         <Header jacob>

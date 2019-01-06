@@ -23,14 +23,14 @@ const Header = styled.div`
         }
 
         @media (max-width: 36em) {
-            font-size: 8vh;
+            font-size: 11vh;
         }
     `}
 
 
     ${props => props.granberry && css`
         color: ${colors.darkred};
-        font-size: 18vh;
+        font-size: 14vh;
         padding: 0 24px;
         margin-top: -32px;
 

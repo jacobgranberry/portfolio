@@ -49,6 +49,7 @@ const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 `
 
 class Card extends Component  {

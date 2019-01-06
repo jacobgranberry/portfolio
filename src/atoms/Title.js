@@ -4,9 +4,10 @@ export const TitleH1 = styled.h1`
     font-family: 'righteous', sans-serif;
     font-size: 112px;
     text-align: center;
+    padding: 0 12px;
 
     @media (max-width: 48em) {
-        font-size: 60px;
+        font-size: 56px;
     }
 `
 
