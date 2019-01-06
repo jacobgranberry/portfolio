@@ -21,33 +21,43 @@ const InlineSpan = styled.span`
     display: inline;
 `
 
+const Spacer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+`
+
 const Home = () => (
     <>
     <Section fixed>
         <Box>
             <Container>
-                <Nav />
-                <ContentWrapper>
-                    <Header jacob>
-                        <InlineSpan>J</InlineSpan>
-                        <InlineSpan>A</InlineSpan>
-                        <InlineSpan>C</InlineSpan>
-                        <InlineSpan>O</InlineSpan>
-                        <InlineSpan>B</InlineSpan>
-                    </Header>
-                    <Header granberry>
-                        <InlineSpan>G</InlineSpan>
-                        <InlineSpan>R</InlineSpan>
-                        <InlineSpan>A</InlineSpan>
-                        <InlineSpan>N</InlineSpan>
-                        <InlineSpan>B</InlineSpan>
-                        <InlineSpan>E</InlineSpan>
-                        <InlineSpan>R</InlineSpan>
-                        <InlineSpan>R</InlineSpan>
-                        <InlineSpan>Y</InlineSpan>
-                    </Header>
-                    <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
-                </ContentWrapper>
+                <Spacer>
+                    <Nav />
+                    <ContentWrapper>
+                        <Header jacob>
+                            <InlineSpan>J</InlineSpan>
+                            <InlineSpan>A</InlineSpan>
+                            <InlineSpan>C</InlineSpan>
+                            <InlineSpan>O</InlineSpan>
+                            <InlineSpan>B</InlineSpan>
+                        </Header>
+                        <Header granberry>
+                            <InlineSpan>G</InlineSpan>
+                            <InlineSpan>R</InlineSpan>
+                            <InlineSpan>A</InlineSpan>
+                            <InlineSpan>N</InlineSpan>
+                            <InlineSpan>B</InlineSpan>
+                            <InlineSpan>E</InlineSpan>
+                            <InlineSpan>R</InlineSpan>
+                            <InlineSpan>R</InlineSpan>
+                            <InlineSpan>Y</InlineSpan>
+                        </Header>
+                    </ContentWrapper>
+                        <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
+                </Spacer>
             </Container>
         </Box>
     </Section>

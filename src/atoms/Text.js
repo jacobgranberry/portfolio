@@ -7,6 +7,10 @@ const Text = styled.p`
     line-height: 30px;
     padding: 12px 24px;
 
+    @media (max-width: 36em) {
+        font-size: 26px;
+    }
+
     ${props => props.centered && css`
         text-align: center;
     `}

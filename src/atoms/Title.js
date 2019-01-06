@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TitleH1 = styled.h1`
-    font-family: 'fat-frank', sans-serif;
+    font-family: 'righteous', sans-serif;
     font-size: 112px;
     text-align: center;
 
@@ -11,7 +11,7 @@ export const TitleH1 = styled.h1`
 `
 
 export const TitleH2 = styled.h2`
-    font-family: 'fat-frank', sans-serif;
+    font-family: 'righteous', sans-serif;
     font-size: 56px;
     text-align: center;
 `

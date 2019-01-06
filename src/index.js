@@ -8,7 +8,8 @@ import { fas, faCircle } from '@fortawesome/free-solid-svg-icons';
 import 'normalize.css';
 import './theme/globalStyle';
 
-require('typeface-montserrat')
+require('typeface-montserrat');
+require('typeface-righteous');
 
 library.add( fab, faLinkedinIn, faGithubAlt, faInstagram, fas, faCircle );
 

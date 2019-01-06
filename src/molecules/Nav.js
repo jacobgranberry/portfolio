@@ -6,10 +6,14 @@ import colors from '../theme/colors';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavWrapper = styled.nav`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0 24px;
+    display: none;
+
+    @media (min-width: 48em) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 24px;
+    }
 `
 const AnchorLink = styled(Link)`
     display: block;

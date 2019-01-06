@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import colors from '../theme/colors';
 
 const Header = styled.div`
-    font-family: 'fatfrank', sans-serif;
+    font-family: 'righteous', sans-serif;
     font-size: 31vh;
     display: flex;
     flex-direction: row;
@@ -12,11 +12,8 @@ const Header = styled.div`
 
 
     ${props => props.jacob && css`
-        background: ${colors.gradient};
-        background-clip: text;
-        text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        flex: none;
+        color: ${colors.darkred};
         @media (max-width: 76em) {
             font-size: 18vh;
         }
@@ -32,11 +29,7 @@ const Header = styled.div`
 
 
     ${props => props.granberry && css`
-        background: ${colors.gradient};
-        background-clip: text;
-        text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: ${colors.darkred};
         font-size: 18vh;
         padding: 0 24px;
         margin-top: -32px;
