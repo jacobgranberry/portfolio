@@ -15,7 +15,7 @@ require('typeface-righteous');
 library.add( fab, faLinkedinIn, faGithubAlt, faInstagram, fas, faCircle );
 
 ReactDOM.render(
-<BrowserRouter basename="/portfolio">
+<BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
 </BrowserRouter>,
 document.getElementById('root')
