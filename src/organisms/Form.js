@@ -5,6 +5,7 @@ import FormInput from '../atoms/FormInput';
 import FormTextArea from '../atoms/FormTextArea';
 import FormLabel from '../atoms/FormLabel';
 import FormButton from '../atoms/FormButton';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { TitleH2 } from '../atoms/Title';
 import styled from 'styled-components';
 
@@ -45,8 +46,10 @@ class Form extends React.Component {
     if (submitted) {
       return (
         <TitleWrapper>
-          <TitleH2>Thanks!</TitleH2>
-          <TitleH2>I'll reach out to you soon!</TitleH2>
+          <ScrollAnimation animateIn="fadeIn" animateOnce>
+            <TitleH2>Thanks!</TitleH2>
+            <TitleH2>I'll reach out to you soon!</TitleH2>
+          </ScrollAnimation>
         </TitleWrapper>
       )
     } else {

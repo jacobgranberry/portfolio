@@ -10,16 +10,13 @@ import Text from '../atoms/Text';
 import ColoredSpan from '../atoms/ColoredSpan';
 import Card from '../organisms/Card';
 import MobileNav from '../organisms/MobileNav';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import data from "../data.js";
 
 const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
-`
-
-const InlineSpan = styled.span`
-    display: inline;
 `
 
 const Spacer = styled.div`
@@ -39,26 +36,31 @@ const Home = () => (
                     <MobileNav />
                     <Nav />
                     <ContentWrapper>
+                    <ScrollAnimation animateIn="fadeIn" animateOnce>
                         <Header jacob>
-                            <InlineSpan>J</InlineSpan>
-                            <InlineSpan>A</InlineSpan>
-                            <InlineSpan>C</InlineSpan>
-                            <InlineSpan>O</InlineSpan>
-                            <InlineSpan>B</InlineSpan>
+                            <span>J</span>
+                            <span>A</span>
+                            <span>C</span>
+                            <span>O</span>
+                            <span>B</span>
                         </Header>
                         <Header granberry>
-                            <InlineSpan>G</InlineSpan>
-                            <InlineSpan>R</InlineSpan>
-                            <InlineSpan>A</InlineSpan>
-                            <InlineSpan>N</InlineSpan>
-                            <InlineSpan>B</InlineSpan>
-                            <InlineSpan>E</InlineSpan>
-                            <InlineSpan>R</InlineSpan>
-                            <InlineSpan>R</InlineSpan>
-                            <InlineSpan>Y</InlineSpan>
+                            <span>G</span>
+                            <span>R</span>
+                            <span>A</span>
+                            <span>N</span>
+                            <span>B</span>
+                            <span>E</span>
+                            <span>R</span>
+                            <span>R</span>
+                            <span>Y</span>
                         </Header>
+                    </ScrollAnimation>
                     </ContentWrapper>
+                    <ScrollAnimation animateIn="fadeInRight" animateOnce>
+
                         <Text><ColoredSpan>Front-end Engineer</ColoredSpan> from Austin, Texas.</Text>
+                        </ScrollAnimation>
                 </Spacer>
             </Container>
         </Box>
@@ -69,6 +71,7 @@ const Home = () => (
               centered
               style={{marginTop: 90}}>Featured Projects</Text>
         {data.map(project =>
+            <ScrollAnimation animateIn="fadeInRight" animateOnce>
             <Card
                 key={project.key}
                 name={project.name}
@@ -78,6 +81,7 @@ const Home = () => (
                 url={project.url}
                 github={project.github}
             />
+            </ScrollAnimation>
         )}
         </section>
         </Container>

@@ -46,7 +46,7 @@ class MobileNav extends Component {
                 />
             </MobileNavWrapper>
             {this.state.open ?
-                <Overlay/>
+                <Overlay isOpen={this.state.open} />
                 :
                 null
             }
