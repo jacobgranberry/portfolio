@@ -8,6 +8,7 @@ const MobileNavWrapper = styled.div`
     justify-content: flex-end;
     padding: 16px 24px;
     z-index: 10;
+    position: relative;
 
     @media (min-width: 48em) {
         display: none;
