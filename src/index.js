@@ -8,7 +8,7 @@ import { fab, faLinkedinIn, faInstagram, faGithubAlt } from '@fortawesome/free-b
 import { fas, faCircle } from '@fortawesome/free-solid-svg-icons';
 import 'normalize.css';
 import './theme/globalStyle';
-import "animate.css/animate.min.css";;
+import "animate.css/animate.min.css";
 
 require('typeface-montserrat');
 require('typeface-righteous');

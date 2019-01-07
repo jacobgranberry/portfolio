@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GlobalStyle from './theme/globalStyle';
-import { Route } from 'react-router-dom';
+import { Route } from 'react-router';
 
 import Home from './templates/Home';
 import About from './templates/About';
