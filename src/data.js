@@ -14,7 +14,7 @@ const data = [
         "techs": ["Design", "CraftCMS", "Frontend"],
         "description": "WesterosCraft is a Minecraft server dedicated to recreating the continent of Westeros, a part of the fictional world from the book series A Song of Ice and Fire , which was adapted into a TV show by HBO called Game of Thrones.  I designed and developed the site (excluding the forums) from scratch, including a custom Wiki system.",
         "image": require("./images/wc.jpg"),
-        "url": "https://westeroscraft.com/",
+        "url": "www.westeroscraft.com/",
         "github": null
     },
     {
