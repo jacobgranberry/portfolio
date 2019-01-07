@@ -71,7 +71,7 @@ const Home = () => (
               centered
               style={{marginTop: 90}}>Featured Projects</Text>
         {data.map(project =>
-            <ScrollAnimation animateIn="fadeInRight" animateOnce>
+            <ScrollAnimation key={project.key} animateIn="fadeInRight" animateOnce>
             <Card
                 key={project.key}
                 name={project.name}
